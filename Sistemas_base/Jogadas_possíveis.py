@@ -10,6 +10,7 @@ def extrai_valor(carta):
         return '10'
     else:
         return carta[0]
+#----------A parte de cima ja faz parte dos outos códigos-----------
 def lista_movimentos_possiveis(baralho,indice):    
     jogadas = []    
     if indice == 0:
