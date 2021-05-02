@@ -1,22 +1,14 @@
 
 def extrai_naipe(carta):
-
     carta = str(carta)
     for t in carta:
-
         if t == '♦' or t =='♥' or t == '♣' or t == '♠':
-
             return t
 def extrai_valor(carta):
-
-    carta = str(carta)
-    
+    carta = str(carta)    
     if '10' in carta:
-
         return '10'
-
     else:
-
         return carta[0]
 def lista_movimentos_possiveis(baralho,indice):    
     jogadas = []    
