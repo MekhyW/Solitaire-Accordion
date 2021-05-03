@@ -1,3 +1,4 @@
+import os
 import random
 from Sistemas_base.Cria_baralho import *
 from Sistemas_base.Empilha_carta import *
@@ -9,6 +10,7 @@ from Sistemas_base.possui_movimentos import *
 print("Bem vindo ao Paciência Acordeão! 🇧🇷\nWelcome to Solitaire Accordion! 🇺🇸\n==================================")
 print("\nRegras (Rules): https://www.youtube.com/watch?v=gLUxTvT59Qg (video from the youtuber EverythingMom)")
 input("Aperte [Enter] para começar a jogar (Press [Enter] to begin)")
+os.system('cls' if os.name == 'nt' else 'clear')
 print("\n\nIniciando primeiro jogo... (starting first game...)\n")
 
 def ImprimeEstadoAtual(baralho):
@@ -41,6 +43,7 @@ def Jogar():
                     print("Segunda carta inválida! Escolha outro movimento (Invalid second card)")
                     print(lista_movimentos_possiveis(pilha, int(alvo)-1))
                 else:
+                    os.system('cls' if os.name == 'nt' else 'clear')
                     empilha(pilha, int(alvo)-1, int(alvo2)-1)
                     ImprimeEstadoAtual(pilha)
                     break
