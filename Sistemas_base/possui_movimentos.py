@@ -24,10 +24,10 @@ def lista_movimentos_possiveis(baralho,indice):
     if indice >= 3:
         valor_terceiro = extrai_valor(baralho[indice - 3])
     if naipe == naipe_anterior or valor == valor_anterior:
-        jogadas.append(1)
+        jogadas.append(indice - 1 + 1)
     if indice >= 3:
         if naipe == naipe_terceiro or valor == valor_terceiro:
-            jogadas.append(3)    
+            jogadas.append(indice - 3 + 1)    
     return jogadas
 
 #----------A parte de cima ja faz parte dos outos códigos-----------

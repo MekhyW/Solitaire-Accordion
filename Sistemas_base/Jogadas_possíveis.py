@@ -24,13 +24,13 @@ def lista_movimentos_possiveis(baralho,indice):
     if indice >= 3:
         valor_terceiro = extrai_valor(baralho[indice - 3])
     if naipe == naipe_anterior or valor == valor_anterior:
-        jogadas.append(1)
+        jogadas.append(indice - 1 + 1)
     if indice >= 3:
         if naipe == naipe_terceiro or valor == valor_terceiro:
-            jogadas.append(3)    
+            jogadas.append(indice - 3 + 1)    
     return jogadas
 
-#print(lista_movimentos_possiveis(['6♥', 'J♥', '9♣', '9♥'],1))
+print(lista_movimentos_possiveis(['6♥', 'J♥', '9♣', '9♥'],3))
 
 
         
