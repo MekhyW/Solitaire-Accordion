@@ -16,7 +16,16 @@ print("\n\nIniciando primeiro jogo... (starting first game...)\n")
 def ImprimeEstadoAtual(baralho):
     print("\nEstado atual do baralho: (Current state of the deck: )")
     for i in range(len(baralho)):
-        print(str(i+1) + ": " + baralho[i])
+        naipe = extrai_naipe(baralho[i])
+        if naipe == '♥':
+            print('\033[0m' + str(i+1) + ": " + '\033[91m' + baralho[i])
+        elif naipe == '♦':
+            print('\033[0m' + str(i+1) + ": " + '\033[93m' + baralho[i])
+        elif naipe == '♣':
+            print('\033[0m' + str(i+1) + ": " + '\033[92m' + baralho[i])
+        elif naipe == '♠':
+            print('\033[0m' + str(i+1) + ": " + '\033[94m' + baralho[i])
+    print('\033[0m')
 
 def Jogar():
     pilha = []
@@ -31,7 +40,7 @@ def Jogar():
         if not possui_movimentos_possiveis(pilha):
             print("VOCÊ PERDEU O JOGO! (YOU LOST!)")
             break
-        alvo = input("\nEscolha uma carta para mover (Choose a card) [2-{}]".format(len(pilha)))
+        alvo = input("Escolha uma carta para mover (Choose a card) [2-{}]".format(len(pilha)))
         if not alvo.isdigit() or (alvo.isdigit() and int(alvo) <= 1) or (alvo.isdigit() and int(alvo) > len(pilha)):
             print("Input inválido! Escolha um número entre 2 e {} (Invalid Input)".format(len(pilha)))
         elif lista_movimentos_possiveis(pilha, int(alvo)-1) == []:
