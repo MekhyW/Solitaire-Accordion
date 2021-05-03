@@ -30,7 +30,7 @@ def lista_movimentos_possiveis(baralho,indice):
             jogadas.append(indice - 3 + 1)    
     return jogadas
 
-print(lista_movimentos_possiveis(['6♥', 'J♥', '9♣', '9♥'],3))
+#print(lista_movimentos_possiveis(['6♥', 'J♥', '9♣', '9♥'],3))
 
 
         

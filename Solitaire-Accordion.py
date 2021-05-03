@@ -7,7 +7,9 @@ from Sistemas_base.Jogadas_possíveis import *
 from Sistemas_base.possui_movimentos import *
 
 print("Bem vindo ao Paciência Acordeão! 🇧🇷\nWelcome to Solitaire Accordion! 🇺🇸\n==================================")
-print("\nIniciando primeiro jogo... (starting first game...)\n")
+print("\nRegras (Rules): https://www.youtube.com/watch?v=gLUxTvT59Qg (video from the youtuber EverythingMom)")
+input("Aperte [Enter] para começar a jogar (Press [Enter] to begin)")
+print("\n\nIniciando primeiro jogo... (starting first game...)\n")
 
 def ImprimeEstadoAtual(baralho):
     print("Estado atual do baralho: (Current state of the deck: )")
