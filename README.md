@@ -3,11 +3,11 @@ Terminal-based Python Solitaire game, developed in pairs for the Software Design
 
 
 
-<img src="C:\Users\Felipe Catapano\Documents\GitHub\Solitaire-Accordion\Printscreen 1.png" alt="Printscreen 1" style="zoom:75%;" />
+![Printscreen 1](Printscreen 1.png)
 
 
 
-![Printscreen 2](C:\Users\Felipe Catapano\Documents\GitHub\Solitaire-Accordion\Printscreen 2.png)
+![Printscreen 2](Printscreen 2.png)
 
 **How to Run:**
 
