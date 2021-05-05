@@ -12,7 +12,7 @@ Terminal-based Python Solitaire game, developed by Felipe Catapano Emrich Melo a
 
 ![Printscreen 2](https://github.com/MekhyW/Solitaire-Accordion/blob/main/Printscreen%202.png)
 
-**At the end if you were able to stack up all the cards you win, but if there are no more possible moves you lose**
+**At the end if you were able to stack up all the cards you win, but if there are no more possible moves you lose.**
 
 **How to Run:**
 
