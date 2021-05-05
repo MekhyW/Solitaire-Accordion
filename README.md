@@ -1,5 +1,5 @@
 # Solitaire-Accordion
-Terminal-based Python Solitaire game, developed in pairs for the Software Design course at Insper
+Terminal-based Python Solitaire game, developed by Felipe Catapano Emrich Melo and Rodrigo Anciães Patelli for the Software Design course at Insper
 
 
 
